@@ -24,7 +24,7 @@ jobs:
       # HUGO_RUN
       - name: generate static site content with Hugo
         run: |
-          apt-get install -y hugo
+          sudo apt-get install -y hugo
           cd blog
           hugo -D
           
