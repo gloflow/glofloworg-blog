@@ -1,0 +1,3 @@
+baseURL = "http://gloflow.org/blog"
+languageCode = "en-us"
+title = "My New Hugo Site"

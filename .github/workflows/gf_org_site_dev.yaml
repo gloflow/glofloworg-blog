@@ -1,0 +1,37 @@
+name: gf_org_site_dev
+on:
+  push:
+    branches: [ main ]
+
+env:
+  ENV: dev
+  AWS_REGION: us-east-1
+
+jobs:
+
+  #--------------------------------------------------------------------
+  # BUILD
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      #-------------------------------
+      # GIT_CHECKOUT
+      - name: checkout gloflow-docs repo
+        uses: actions/checkout@v3
+                
+      #-------------------------------
+      # S3_UPLOAD
+      - name: push docs to GF org s3
+        uses: shallwefootball/s3-upload-action@master
+        with:
+          aws_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+          aws_bucket: 'gloflow.org'
+          source_dir: 'build'
+          destination_dir: 'docs'
+
+      #-------------------------------
+
+  
+  #--------------------------------------------------------------------
