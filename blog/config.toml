@@ -6,6 +6,6 @@ theme = "glofloworg-blog"
 [menu]
   [[menu.main]]
     identifier = "posts"
-    name = "Posts"
+    name = "posts"
     url = "/posts"
     weight = 10

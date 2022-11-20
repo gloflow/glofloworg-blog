@@ -1,5 +1,3 @@
-/* LAYOUT */
-
 body {
   color: #333;
   font-size: 125%;
@@ -11,14 +9,17 @@ body {
   font-family: 'Roboto';
 }
 
+/*-------------------------------------------------------*/
 .content {
   margin-bottom: 2rem;
 }
 
+/*-------------------------------------------------------*/
 /* NAVIGATION */
 
 .site-nav {
   display: flex;
+  font-size: 14px;
 }
 
 .site-nav a {
@@ -50,6 +51,7 @@ body {
   }
 }
 
+/*-------------------------------------------------------*/
 /* LISTS */
 
 .post-snippet {
@@ -63,11 +65,12 @@ body {
 /*-------------------------------------------------------*/
 /*POST*/
 .post_title {
-  font-size: 20px;
+  font-size: 26px;
 }
 
 /*-------------------------------------------------------*/
 a {
+  color: gray;
   text-decoration: none;
 }
 
