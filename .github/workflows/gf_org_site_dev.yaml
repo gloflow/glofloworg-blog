@@ -17,19 +17,19 @@ jobs:
 
       #-------------------------------
       # GIT_CHECKOUT
-      - name: checkout gloflow-docs repo
+      - name: checkout glofloworg-blog repo
         uses: actions/checkout@v3
                 
       #-------------------------------
       # S3_UPLOAD
-      - name: push docs to GF org s3
+      - name: push blog to GF org s3
         uses: shallwefootball/s3-upload-action@master
         with:
           aws_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
           aws_bucket: 'gloflow.org'
-          source_dir: 'build'
-          destination_dir: 'docs'
+          source_dir: 'blog/public'
+          destination_dir: 'blog'
 
       #-------------------------------
 
