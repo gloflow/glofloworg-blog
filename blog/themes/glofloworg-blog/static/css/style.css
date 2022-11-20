@@ -59,3 +59,11 @@ body {
 .post-snippet h3 {
   margin-bottom: 0.25rem;
 }
+
+/*-------------------------------------------------------*/
+/*FOOTER*/
+footer {
+  position: fixed;
+  bottom: 0px;
+  font-size: 12px;
+}
