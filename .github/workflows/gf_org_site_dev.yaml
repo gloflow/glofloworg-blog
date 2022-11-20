@@ -19,7 +19,15 @@ jobs:
       # GIT_CHECKOUT
       - name: checkout glofloworg-blog repo
         uses: actions/checkout@v3
-                
+
+      #-------------------------------
+      # HUGO_RUN
+      - name: generate static site content with Hugo
+        run: |
+          apt-get install -y hugo
+          cd blog
+          hugo -D
+          
       #-------------------------------
       # S3_UPLOAD
       - name: push blog to GF org s3
