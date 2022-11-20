@@ -7,6 +7,10 @@
 
 	<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 
+	<!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+	
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css" type="text/css" media="all" />
 
 	{{ with .OutputFormats.Get "rss" -}}
