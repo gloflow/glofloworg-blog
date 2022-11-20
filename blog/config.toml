@@ -1,0 +1,11 @@
+baseURL = "https://gloflow.org/blog"
+languageCode = "en-us"
+title = "gloflow.org Blog"
+theme = "glofloworg-blog"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 10
